@@ -1,0 +1,59 @@
+.text-style {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.activity {
+  height: 510px;
+  overflow: auto;
+}
+
+.border-edge {
+  border: 3px dotted gray;
+  border-left: 4px solid red;
+}
+
+.border-edge-completed {
+  border: 3px dotted rgb(109, 148, 239);
+  border-left: 4px solid rgb(23, 145, 55);
+}
+
+.no-task {
+  width: 100%;
+}
+
+.input-style {
+  @apply border w-full outline-none p-1 rounded focus:ring-2 focus:ring-blue-300;
+}
+
+.changeColor {
+  @apply bg-blue-800;
+}
+
+.card {
+  @apply my-3 border-edge ps-3 py-1 shadow-md;
+}
+
+.card-completed-task {
+  @apply my-3 border-edge-completed ps-3 py-1 shadow-md;
+}
+
+.activity::-webkit-scrollbar {
+  width: 8px;
+}
+
+.activity::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.activity::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.activity::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.validate {
+  @apply text-xs text-red-600 opacity-75 mx-2 text-start mt-1;
+}/*# sourceMappingURL=task.component.css.map */
