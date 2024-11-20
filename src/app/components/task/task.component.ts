@@ -107,7 +107,6 @@ export class TaskComponent implements OnInit{
   }
 
   updateStatus(target: string){
-    debugger
     const storedRecords = store.get(this.key);
     const parsedRecords = storedRecords !== "" ? store.parse(storedRecords) : [];
 
@@ -125,7 +124,6 @@ export class TaskComponent implements OnInit{
   }
 
   editTask(item : IRecord){
-    debugger
     this.form = this._fb.group({
       id:[item['id']],
       title: [item['title'], [Validators.required, Validators.minLength(4), Validators.maxLength(20)]],
@@ -139,7 +137,7 @@ export class TaskComponent implements OnInit{
 
   update(){
     try{
-      debugger
+
       this._spinner.busy();
       const formData =  this.form.getRawValue();
 
